@@ -5,7 +5,7 @@ function BookEdit({ book, onSubmit }) {
 
   const handleSubmit = function (e) {
     e.preventDefault();
-    onSubmit(newTitle);
+    onSubmit(book.id, newTitle);
   };
 
   const handleOnChange = function (e) {
